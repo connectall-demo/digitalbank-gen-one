@@ -27,13 +27,15 @@ set this_sec=%time:~6,2%
 if "%this_sec:~0,1%" == " " set this_sec=0%this_sec:~1,1%
 echo this_sec=%this_sec%
 
-set right_now=%this_year%-%this_month%-%this_day% %this_hour%:%this_min%:%this_sec%
+set right_now=%this_year%-%this_month%-%this_day%p%this_hour%:%this_min%:%this_sec%
 echo right_now=%right_now%
+
+set VSMComponent="811335538253"
 
 set json={\"appLinkName\":\"%AutomationName%\",
 set json=%json%\"fields\":
 set json=%json%{\"id\":\"%BUILD_TAG%\",
-set json=%json%\"title\":\"Build %BUILD_NUMBER% completed with status %BUILD_RESULT%\",
+set json=%json%\"title\":\"%VSMComponent%\",
 set json=%json%\"status\":\"%BUILD_RESULT%\",
 set json=%json%\"created_by\":\"%USER%\",
 set json=%json%\"assigned_to\":\"%USER%\",
