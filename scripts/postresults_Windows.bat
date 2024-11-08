@@ -38,7 +38,7 @@ set json1=%json1%"created_time":"2024",
 set json1=%json1%"BUILD_ID":"%BUILD_ID%"
 set json1=%json1%}}
 
-set json={"appLinkName":"%AutomationName%","fields":{"id":"Jenkins-%BUILD_ID%","title":"811335538253","created_time":"2024","BUILD_ID":"%BUILD_ID%"}}
+set json={\"appLinkName\":\"%AutomationName%\",\"fields\":{\"id\":\"Jenkins-%BUILD_ID%\",\"title\":\"811335538253\",\"BUILD_ID\":\"%BUILD_ID%\"}}
 
 echo Send JSON: %json%
 
