@@ -28,6 +28,7 @@ if "%this_sec:~0,1%" == " " set this_sec=0%this_sec:~1,1%
 echo this_sec=%this_sec%
 
 set right_now=%this_year%-%this_month%-%this_day%p%this_hour%:%this_min%:%this_sec%
+set right_now="Wed Oct 11 06:45:41 UTC 2023"
 echo right_now=%right_now%
 
 set VSMComponent="811335538253"
