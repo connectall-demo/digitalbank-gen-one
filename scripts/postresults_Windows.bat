@@ -32,7 +32,7 @@ echo right_now=%right_now%
 
 set json={"appLinkName":"%AutomationName%",
 set json=%json%"fields":
-set json=%json%{"id":""%BUILD_ID%"",
+set json=%json%{"id":"%BUILD_ID%",
 set json=%json%"title":"811335538253",
 set json=%json%"created_time":"2024",
 set json=%json%"BUILD_ID":"%BUILD_ID%"
