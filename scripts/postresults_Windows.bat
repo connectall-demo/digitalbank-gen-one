@@ -30,13 +30,15 @@ echo this_sec=%this_sec%
 set right_now=%this_year%-%this_month%-%this_day% %this_hour%:%this_min%:%this_sec%
 echo right_now=%right_now%
 
-set json={"appLinkName":"%AutomationName%",
-set json=%json%"fields":
-set json=%json%{"id":"Jenkins-%BUILD_ID%",
-set json=%json%"title":"811335538253",
-set json=%json%"created_time":"2024",
-set json=%json%"BUILD_ID":"%BUILD_ID%"
-set json=%json%}}
+set json1={"appLinkName":"%AutomationName%",
+set json1=%json1%"fields":
+set json1=%json1%{"id":"Jenkins-%BUILD_ID%",
+set json1=%json1%"title":"811335538253",
+set json1=%json1%"created_time":"2024",
+set json1=%json1%"BUILD_ID":"%BUILD_ID%"
+set json1=%json1%}}
+
+set json={"appLinkName":"%AutomationName%","fields":{"id":"Jenkins-%BUILD_ID%","title":"811335538253","created_time":"2024","BUILD_ID":"%BUILD_ID%"}}
 
 echo Send JSON: %json%
 
